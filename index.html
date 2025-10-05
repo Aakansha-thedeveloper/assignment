@@ -1,225 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+  </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 5</title>
-    <style>
-        @media (max-width: 900px) {
-            .boxes-container {
-                flex-direction: column;
-                gap: 30px;
-            }
+    <header>
+    <h1 style="text-decoration: underline;">Welcome to Laundry Wallah / Laundry Mart</h1>
+    <p><i>
+      Welcome to Laundry Wallah / Laundry Mart, your trusted partner for fresh,
+      clean, and neatly pressed clothes. We provide hassle-free laundry, dry
+      cleaning, and ironing services with a focus on quality and timely
+      delivery. From everyday wear to delicate fabrics, our experts handle your
+      clothes with utmost care. Enjoy doorstep pickup and delivery, making
+      laundry easier than ever before. Affordable pricing and professional
+      service ensure complete customer satisfaction. Because at Laundry Wallah,
+      we believe clean clothes = happy life!
+    </i></p>
+    <img src="LAUNDARY.png" alt="laundary img" height="350"/>
+    </header>
+    <hr>
 
-            .box1,
-            .box2,
-            .box3 {
-                width: 90%;
-                padding: 20px;
-            }
+    <section id="Our Services">
+    <h2>Our Services</h2>
+     <ul>
+        <li>Washing and Drying</li>
+        <li>Ironing and Folding</li>
+        <li>Dry Cleaning</li>
+        <li>Stain Removal</li>
+        <li>Express Services</li>
+        <li>Special Garment Care</li>
+        <li>And more...</li>
+     </ul>
+     </section>
+     <hr>
 
-            .box3 {
-                font-size: 20px;
-            }
-        }
+     <section id="Price List">
+     <h2>Price List</h2>
+     <table border>
+        <thead>
+            <tr>
+                <td>Service</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Washing and Drying</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Ironing and Folding</td>
+                <td>$5.00</td>
+            </tr>
+        </tbody>
+     </table>
+     <br>
+     </section>
+     <hr>
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+     <section id="Book Now">
+     <h2>Book Now</h2>
+     <form action="">
+        <label for="">User's Name :</label>
+        <input type="text" placeholder="Name" required>
+        <label for="">Enter your email</label>
+        <input type="email" placeholder="Email" required>
+        <label for="">Phone</label>
+        <input type="number" placeholder="Phone number" required>
+        <input type="submit">
+     </form>
+     <br>
+     </section>
+     <hr>
 
-        body {
-            background-color: rgb(66, 72, 116);
-        }
+     <footer>
+        Contact us at: info@laundrymart.com
+     </footer>
 
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 60px;
-        }
-
-        .navbar {
-            border-bottom: 5px solid black;
-            border-top: 5px solid black;
-            position: sticky;
-            top: 0px;
-            padding: 10px;
-            margin-bottom: 50px;
-            background-color: rgb(244, 238, 255);
-        }
-
-        .tabs {
-            border: 2px solid black;
-            border-style: none;
-            border-radius: 10px;
-            padding: 10px 20px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .tabs:hover {
-            background-color: rgb(166, 177, 225);
-            cursor: pointer;
-        }
-
-        .box1,
-        .box2 {
-            padding: 30px;
-            text-align: center;
-            font-size: 18px;
-            height: auto;
-            width: 550px;
-            border: 5px solid white;
-            box-sizing: border-box;
-            background-color: rgb(220, 214, 247);
-
-        }
-
-
-        .box1 h2,
-        .box2 h2 {
-            padding-bottom: 20px;
-            text-align: center;
-            color: rgb(91, 91, 225);
-            text-decoration-line: underline;
-            text-decoration-thickness: 2px;
-        }
-
-        .boxes-container {
-            padding: 10px 50px;
-            display: flex;
-            gap: 100px;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .box3 {
-            color: rgb(245, 239, 255);
-            border: 8px solid rgb(235, 214, 251);
-            border-radius: 50px;
-            margin: 50px auto;
-            padding: 50px;
-            text-align: center;
-            width: 850px;
-            font-size: 30px;
-            font-weight: bolder;
-        }
-
-        .box4 {
-            background-color: rgb(192, 201, 238);
-            padding: 30px;
-            font-size: 25px;
-            text-align: center;
-            font-weight: bold
-        }
-
-        img {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 4px 50px rgb(2, 11, 41);
-
-        }
-
-        .box1,
-        .box2,
-        .box3,
-        img {
-            box-shadow: 0 4px 50px rgb(2, 11, 41);
-        }
-    </style>
-</head>
-
-<body>
-
-    <nav class="navbar">
-        <ul>
-            <li class="tabs"> Home </li>
-            <li class="tabs"> About </li>
-            <li class="tabs"> My Profile </li>
-            <li class="tabs"> Contact Us </li>
-        </ul>
-    </nav>
-
-
-    <main class="boxes-container">
-        <div class="box1">
-            <h2> First Box </h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt saepe quam provident dolore dicta veritatis
-            corporis, earum enim, laboriosam, reiciendis mollitia aliquam aut et praesentium similique. Dolorem illo
-            veniam id mollitia quidem natus architecto adipisci eaque, dignissimos libero obcaecati aspernatur totam ad
-            earum amet suscipit voluptatum! Nostrum, perspiciatis eveniet iste quia illum facilis dolor cupiditate
-            reiciendis necessitatibus tempora veritatis, similique sed optio nulla eligendi harum nobis officiis libero
-            reprehenderit pariatur labore! Voluptas doloremque nobis quam, exercitationem, eius suscipit est error,
-            reiciendis dolorum dolore minus ab illum! Accusantium rerum pariatur adipisci minus fugiat, architecto
-            asperiores commodi minima error et! Suscipit iusto, est similique deleniti qui, eaque officia ipsa
-            praesentium earum molestiae ab. Dolorum, iste dolores quod inventore architecto tempora numquam earum fuga
-            atque. Assumenda, sit magni, neque ipsum quasi, iure repellat laboriosam repellendus facilis fugit explicabo
-            temporibus. Recusandae officiis ratione exercitationem necessitatibus illo eum nisi, sunt, velit et est
-            vitae? Harum architecto unde ratione eius ea tenetur. Assumenda nihil sit incidunt dicta dolore voluptas
-            mollitia suscipit nobis inventore! Facere quo quos assumenda, dolor voluptatem quod perspiciatis asperiores
-            sit repudiandae unde consequuntur ab in exercitationem consectetur nisi quas dicta omnis non tenetur! Iusto
-            animi, maiores ipsam assumenda aliquam ex voluptas ipsum itaque sapiente minima repudiandae ullam quos
-            quidem necessitatibus culpa consectetur dolore explicabo perferendis quod. Veniam provident reiciendis quo
-            dicta ipsa reprehenderit repudiandae, aliquid accusantium sapiente, libero earum dignissimos obcaecati
-            nesciunt qui quidem ipsam nobis, ut consequatur in aliquam ducimus. Quam, quisquam error id ex explicabo
-            temporibus odio doloremque aspernatur illum modi eligendi, rem ipsa culpa vel asperiores qui quos magni.
-            Numquam molestiae totam vel laboriosam, dolorem rerum? Maiores optio necessitatibus nobis fugit nostrum sint
-            eveniet facilis. Modi qui a, unde iste quibusdam incidunt? Laborum accusantium beatae expedita? Hic facere
-            aut vitae amet consequatur, necessitatibus aperiam esse corporis, deserunt similique exercitationem tempora
-            ab rerum praesentium inventore culpa libero totam accusantium expedita ducimus nulla. Officia aliquid facere
-            similique natus eos nostrum fugiat, incidunt, dolor quidem, ratione odit adipisci optio tenetur deleniti
-            provident consequatur praesentium magni quos id velit accusantium iusto quasi alias doloribus! Id mollitia
-            nobis, saepe consequuntur officiis iure consectetur voluptate voluptatem.
-        </div>
-
-
-        <div class="box2">
-            <h2> Second Box </h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate error reprehenderit doloremque
-            repellat, cumque ut distinctio quaerat. Dolore non et itaque voluptates repellendus tempora vel?
-            Voluptatibus optio ad officia assumenda debitis recusandae eveniet nesciunt, nihil exercitationem aspernatur
-            enim molestiae porro dignissimos rerum iste incidunt explicabo, in, sit at eaque facere laudantium
-            cupiditate. Molestiae magnam placeat ut accusantium consequatur voluptates ratione voluptatem, animi
-            molestias optio cupiditate laudantium explicabo eos similique autem officiis eveniet. Dignissimos nisi nemo
-            animi, dolorum iste, error sed recusandae iusto numquam id doloribus optio ad deserunt voluptate laboriosam,
-            eaque consectetur. Eaque earum quo ducimus eligendi reprehenderit officiis, aperiam, ratione fugit provident
-            officia recusandae eveniet cupiditate incidunt unde mollitia? Ut, omnis consequatur dicta in, sequi,
-            possimus deserunt mollitia placeat voluptates perspiciatis inventore fugiat suscipit quisquam magni odio
-            adipisci assumenda modi similique aliquid beatae repellat aliquam aperiam? Odio, beatae? Quas, at. Ipsa a
-            quisquam, reprehenderit iusto voluptatem reiciendis molestiae aliquid nulla veniam quam delectus unde minus
-            porro nobis est ea excepturi quis autem tenetur ullam harum. Harum pariatur assumenda corporis in voluptatem
-            provident inventore cumque, explicabo quisquam tenetur animi doloribus autem similique, commodi alias,
-            excepturi quod quam. Soluta quia nulla, nisi sint unde vero voluptates dolores accusamus sunt ratione, sit
-            neque consequuntur asperiores laborum quos similique corrupti molestias, alias earum! Nisi tempora deleniti
-            aliquam qui atque, quo officia mollitia deserunt fugiat iure numquam repellat at! Dolorum modi odit
-            consequatur rerum, dolore, numquam fugit et quam maiores architecto cupiditate suscipit adipisci doloremque,
-            ex ratione blanditiis porro magnam expedita! Labore vel sed necessitatibus delectus asperiores quo aperiam
-            velit tempore neque voluptates, doloremque dicta perspiciatis laudantium quis iusto error officiis magnam
-            fugiat accusamus? Earum officiis vitae ipsa quaerat ab laudantium, labore ut recusandae maiores quam unde
-            rem omnis cupiditate temporibus cumque repellat doloremque veniam praesentium. Maxime modi voluptas sequi
-            hic cumque, sed tenetur numquam veniam accusantium, necessitatibus a pariatur consectetur nemo illo officia
-            rem voluptatibus placeat, iure dolores assumenda. Esse commodi enim laborum quas, consectetur excepturi
-            reiciendis explicabo nihil nam eveniet quaerat nesciunt unde incidunt assumenda maxime vero alias quidem
-            exercitationem sapiente dicta, sed voluptas accusamus! Ullam similique
-        </div>
-    </main>
-
-
-    <section class="box3">
-        Member of Sigma Web Development Course - "Glad to be here till video-37 , Really enjoying it , and gaining
-        confidence on each exercise completion"
-    </section>
-
-    <img src="img1.png" alt=" website logo">
-    <footer class="box4">
-        Thank you for visiting us..
-    </footer>
-</body>
-
+  </body>
 </html>
